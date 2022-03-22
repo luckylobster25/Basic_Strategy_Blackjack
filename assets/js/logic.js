@@ -29,21 +29,28 @@ function startQuiz() {
 
   // show starting time
   timerEl.textContent = time;
-  console.log(chue);
   getQuestion();
 }
 
 function getQuestion() {
   // get current question object from array
   var currentQuestion = questions[currentQuestionIndex];
-
+  // upload card
   // update title with current question
   var titleEl = document.getElementById("question-title");
-  titleEl.textContent = currentQuestion.title;
+  // titleEl.textContent = currentQuestion.title;
 
   // clear out any old question choices
   choicesEl.innerHTML = "";
-
+  // display dealer card
+  var dealerCard = currentQuestion.dealer;
+  var dealerCardEl = document.getElementById("dealer-showing")
+  dealerCardEl.setAttribute("src", dealerCard)
+  // display player two card
+  var playerCard1 = currentQuestion.player[0];
+  var playerCard2 = currentQuestion.player[1];
+  document.getElementById("player-first-card").setAttribute("src", playerCard1);
+  document.getElementById("player-second-card").setAttribute("src", playerCard2);
   // loop over choices
   currentQuestion.choices.forEach(function(choice, i) {
     // create new button for each choice
