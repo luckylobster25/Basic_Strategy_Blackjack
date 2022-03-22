@@ -100,6 +100,18 @@ li:nth-child(odd) {
   display: inline;
   width: 49%;
 }
+.blackjack-card {
+  box-shadow: 1px 5px 15px black;
+  padding: 2px;
+  margin-bottom: 10px;
+}
+.player {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+.dealer {
+  margin: 12px 0px;
+}
 #questions {
   color: rgba(240, 255, 255, 0.897);
 }
