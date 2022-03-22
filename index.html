@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>BlackJack Basic Strategy</title>
 
-    <link rel="stylesheet" href="./assets/css/styles.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>BlackJack Basic Strategy</title>
 
-  <body>
-    <div class="scores"><a href="highscores.html">View Highscores</a></div>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+</head>
 
-    <div class="timer">Time: <span id="time">0</span></div>
+<body>
+  <div class="scores"><a href="highscores.html">View Highscores</a></div>
 
-    <div class="wrapper">
-      <div id="start-screen" class="start">
-        <h1>Basic Strategy Challenge</h1>
-        <p>
-          Answer the following basic strategy questions within the time
-          limit. Keep in mind that incorrect answers will penalize your
-          time by ten seconds!
-        </p>
-        <button id="start">Start Quiz</button>
-      </div>
+  <div class="timer">Time: <span id="time">0</span></div>
 
-      <div id="questions" class="hide">
-        <h2 id="question-title"></h2>
-        <div id="choices" class="choices"></div>
-      </div>
-
-      <div id="end-screen" class="hide">
-        <h2>All done!</h2>
-        <p>Your final score is <span id="final-score"></span>.</p>
-        <p>
-          Enter your name: <input type="text" id="initials" max="15" />
-          <button id="submit">Submit</button>
-        </p>
-      </div>
-
-      <div id="feedback" class="feedback hide"></div>
+  <div class="wrapper">
+    <div id="start-screen" class="start">
+      <h1>Basic Strategy Challenge</h1>
+      <p>
+        Answer the following basic strategy questions within the time
+        limit. Keep in mind that incorrect answers will penalize your
+        time by ten seconds!
+      </p>
+      <button id="start">Start Quiz</button>
     </div>
 
-    <script src="./assets/js/questions.js"></script>
-    <script src="./assets/js/logic.js"></script>
-  </body>
+    <div id="questions" class="hide">
+      <h2 id="question-title"></h2>
+      <div class="main-box">
+        <div class="card-container">
+          <h4 class="dealer" id="dealer">Dealer: </h4>
+          <img id="dealer-showing" src="" alt="">
+        </div>
+        <div class="card-container">
+          <h4 class="player" id="player">Player: </h4>
+          <img id="player-first-card" src="" alt="">
+          <img id="player-second-card" src="" alt="">
+        </div>
+      </div>
+      <div id="choices" class="choices"></div>
+    </div>
+
+    <div id="end-screen" class="hide">
+      <h2>All done!</h2>
+      <p>Your final score is <span id="final-score"></span>.</p>
+      <p>
+        Enter your name: <input type="text" id="initials" max="15" />
+        <button id="submit">Submit</button>
+      </p>
+    </div>
+
+    <div id="feedback" class="feedback hide"></div>
+  </div>
+
+  <script src="./assets/js/questions.js"></script>
+  <script src="./assets/js/logic.js"></script>
+</body>
+
 </html>
