@@ -1,4 +1,4 @@
-// list of all questions, choices, and answers
+// list of all questions, choices, and answers, (20 question)
 var questions = [
   {
     title: "Dealer showing a 2, player have 12",
