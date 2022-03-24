@@ -19,9 +19,9 @@ button {
   margin: 5px;
   cursor: pointer;
   font-size: 100%;
-  background-color: #563d7c;
+  background-color: #0a2b10;
   border-radius: 5px;
-  padding: 2px 10px;
+  padding: 8px 10px;
   color: white;
   border: 0;
   transition: background-color 0.1s;
@@ -33,7 +33,7 @@ button:hover {
 
 .choices button {
   display: block;
-  margin-top: 15px;
+  margin-top: 8px;
 }
 
 input[type="text"] {
@@ -52,19 +52,19 @@ li {
 }
 
 li:nth-child(odd) {
-  background-color: #522c8d73;
+  background-color: #0a2b10;
 }
 
 .wrapper {
   margin: 50px auto 0 auto;
   max-width: 600px;
 }
-
 .hide {
   display: none;
 }
 
 .start {
+  margin-top: 150px;
   text-align: center;
   color: rgba(240, 255, 255, 0.884);
 }
@@ -80,8 +80,8 @@ li:nth-child(odd) {
   font-size: 120%;
   margin-top: 20px;
   padding-top: 10px;
-  color: gray;
-  border-top: 2px solid #ccc;
+  color: rgb(10, 0, 0);
+  border-top: 2px solid rgb(5, 1, 1);
 }
 
 .timer {
