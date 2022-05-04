@@ -115,7 +115,7 @@ var questions = [
   {
     title: "Dealer showing a 10, player have 18",
     choices: ["hit", "stand", "double down", "split"],
-    answer: "hit",
+    answer: "stand",
     dealer: "assets/img/king.jpg",
     player: ["assets/img/card-8-heart.jpg", "assets/img/queen.jpg"]
   },
